@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Router, Route, Switch } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { createBrowserHistory } from 'history';
+
+import Home from './pages/Home/Home';
+import NotFound from './pages/NotFound/NotFound';
+import MainUser from './pages/User/MainUser';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const history = createBrowserHistory();
+    const token = localStorage.getItem('substkn');
+
+    useEffect(() => {
+        if (!!token) {
+            history.push('/MainUser');
+        }
+    }, [token, history]);
+
+    return (
+        <Router history={history}>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/MainUser" component={MainUser} />
+                <Route exact path="*" component={NotFound} />
+            </Switch>
+        </Router>
+    );
 }
 
 export default App;

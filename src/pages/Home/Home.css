@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../../assets/background.webp') no-repeat center top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.form-gen {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.formItem {
+    margin: 5px;
+}
+
+.form-check {
+    padding-top: 10px;
+}
+.radioItem {
+    margin: 5px;
+}
+
+.homeButton-container {
+    display: flex;
+    justify-content: center;
+}
+
+.homeButton.homeButton.homeButton {
+    margin: 5px;
+    height: 40px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: #40403e;
+    border: cornsilk;
+}
+
+.homeButton.homeButton.homeButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}

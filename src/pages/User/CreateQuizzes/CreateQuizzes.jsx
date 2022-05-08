@@ -1,13 +1,13 @@
-import UserProfile from '../../components/User/UserProfile';
-import UserInfo from '../../components/User/UserInfo';
-import UserBar from '../../components/User/UserBar';
+import UserProfile from '../../../components/User/UserProfile';
+import UserInfo from '../../../components/User/UserInfo';
+import UserBar from '../../../components/User/UserBar';
 import { useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
-import { getUser } from '../../store/userReducer';
+import { getUser } from '../../../store/userReducer';
 
-import './MainUser.css';
+import './CreateQuizzes.css';
 
-function MainUser() {
+function CreateQuizzes() {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getUser());
@@ -32,4 +32,4 @@ function MainUser() {
     );
 }
 
-export default MainUser;
+export default CreateQuizzes;

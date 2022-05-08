@@ -26,7 +26,7 @@ function UserBar() {
                     <strong>PLAY QUIZZES</strong>
                 </Link>
                 <Link to={() => validateToken('/ListQuizzes')} className="userLinkButton btn btn-primary link">
-                    <strong>LIST OF QUESTIONS</strong>
+                    <strong>LIST OF QUIZZES</strong>
                 </Link>
                 <button type="button" onClick={Logout} className="userButton btn btn-primary">
                     <strong>LOG OUT</strong>

@@ -4,7 +4,7 @@ import UserInformationUpdate from './UserInformationUpdate';
 function UserInfo() {
     const { user } = useSelector((state) => {
         return {
-            user: state.selectUserReducer.user
+            user: state.userReducer.user
         };
     });
     return (

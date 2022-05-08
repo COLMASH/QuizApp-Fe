@@ -1,9 +1,11 @@
-import selectUserReducer from './userReducer';
+import userReducer from './userReducer';
+import quizReducer from './quizReducer';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 const rootReducer = combineReducers({
-    selectUserReducer
+    userReducer,
+    quizReducer
 });
 
 const middlewares = applyMiddleware(thunk);

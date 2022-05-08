@@ -20,7 +20,7 @@ function UserBar() {
                 </Link>
 
                 <Link to={() => validateToken('/CreateQuizzes')} className="userLinkButton btn btn-primary link">
-                    <strong>CREATE QUIZZES</strong>
+                    <strong>CREATE/EDIT/DELETE QUIZZES</strong>
                 </Link>
                 <Link to={() => validateToken('/PlayQuizzes')} className="userLinkButton btn btn-primary link">
                     <strong>PLAY QUIZZES</strong>

@@ -90,3 +90,13 @@
 .mb-0 {
     font-size: 16px;
 }
+
+.admins-blockManager {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Tahoma, Verdana, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
+}

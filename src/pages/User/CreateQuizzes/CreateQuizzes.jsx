@@ -1,9 +1,10 @@
 import UserProfile from '../../../components/User/UserProfile';
-import UserInfo from '../../../components/User/UserInfo';
 import UserBar from '../../../components/User/UserBar';
 import { useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
 import { getUser } from '../../../store/userReducer';
+import ManageQuizzes from '../../../components/Quiz/ManageQuizzes';
+import QuizList from '../../../components/Quiz/QuizList';
 
 import './CreateQuizzes.css';
 
@@ -23,9 +24,12 @@ function CreateQuizzes() {
                     <UserBar />
                 </div>
             </div>
-            <div className="user-blockInfo">
+            <div style={{ color: 'white' }}>
                 <div>
-                    <UserInfo />
+                    <ManageQuizzes />
+                    <br />
+                    <h3>List of Quizzes</h3>
+                    <QuizList />
                 </div>
             </div>
         </div>

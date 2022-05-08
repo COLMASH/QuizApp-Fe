@@ -12,7 +12,7 @@ export const CLEAR_QUIZ_TO_UPDATE = 'CLEAR_QUIZ_TO_UPDATE';
 export const CLEAR_QUIZ_TO_DELETE = 'CLEAR_QUIZ_TO_DELETE';
 
 const initialState = {
-    quiz: {},
+    quiz: [],
     quizList: {},
     quizToDelete: '',
     quizToUpdate: ''
@@ -128,9 +128,9 @@ export function deleteQuiz(quizToDelete) {
             });
         } catch (error) {
             Swal.fire({
-                title: 'Oops...',
-                icon: 'error',
-                text: 'Something went wrong',
+                title: 'Confirmation',
+                icon: 'success',
+                text: `Quiz has been successfully removed! 🗑`,
                 button: 'OK'
             });
             console.log(error.message);
